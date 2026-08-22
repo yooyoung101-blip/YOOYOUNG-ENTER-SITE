@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A&R / Music Production 지원용 YOOYOUNG 개인 프로모션 캠페인 사이트"
+    />
+    <meta property="og:title" content="YOOYOUNG A&R Campaign Site" />
+    <meta
+      property="og:description"
+      content="앨범 프로모션 사이트처럼 구성한 A&R / Music Production 포트폴리오"
+    />
+    <meta property="og:image" content="assets/campaign-key-visual.png" />
+    <title>YOOYOUNG | A&R Campaign</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-light" aria-hidden="true"></div>
+    <header class="site-header" aria-label="주요 이동">
+      <a class="brand" href="#cover">YOOYOUNG</a>
+      <nav>
+        <a href="#scanner">ID</a>
+        <a href="#map">Map</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#builder">Build</a>
+        <a href="#cases">Cases</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="cover section" id="cover">
+        <img
+          class="cover-art"
+          src="assets/campaign-key-visual.png"
+          alt="음악 캠페인 오브젝트와 웨이브폼이 겹쳐진 키 비주얼"
+        />
+        <div class="cover-overlay"></div>
+        <div class="cover-content">
+          <p class="eyebrow">A&R / Music Production Applicant Campaign</p>
+          <h1>YOOYOUNG</h1>
+          <p class="lead">
+            음악을 발견하고, 맥락을 설계하고, 사람에게 닿는 캠페인으로 완성하는
+            프로덕션형 A&R 포트폴리오.
+          </p>
+          <div class="cover-actions">
+            <a class="button primary" href="#scanner">Scan Profile</a>
+            <a class="button secondary" href="#tracks">Open Track Deck</a>
+          </div>
+        </div>
+        <aside class="signal-board" aria-label="캠페인 핵심 신호">
+          <span>Signal 01</span>
+          <strong>Discovery</strong>
+          <span>Signal 02</span>
+          <strong>Production</strong>
+          <span>Signal 03</span>
+          <strong>Campaign</strong>
+        </aside>
+      </section>
+
+      <section class="scanner section" id="scanner">
+        <div class="section-copy">
+          <p class="eyebrow">ID Scanner</p>
+          <h2>지원자를 스캔하면 역할이 보인다.</h2>
+          <p>
+            단순 업무 이력보다 어떤 감각으로 음악과 시장을 연결하는지 먼저
+            보여주는 프로필 카드다.
+          </p>
+        </div>
+        <div class="scanner-card" tabindex="0">
+          <div class="scan-line" aria-hidden="true"></div>
+          <div class="profile-grid">
+            <span>Name</span>
+            <strong>YOOYOUNG</strong>
+            <span>Role</span>
+            <strong>A&R / Music Production</strong>
+            <span>Mode</span>
+            <strong>Trend Reader + Detail Finisher</strong>
+            <span>Focus</span>
+            <strong>Artist Fit, Song Narrative, Release Strategy</strong>
+          </div>
+          <div class="scanner-meter" aria-label="역량 비율">
+            <button data-scan="taste" class="is-active">Taste</button>
+            <button data-scan="coordination">Coordination</button>
+            <button data-scan="story">Story</button>
+          </div>
+          <p id="scan-result" class="scan-result">
+            레퍼런스와 신인을 빠르게 듣고, 아티스트의 장점이 선명해지는 방향을
+            찾습니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="experience section" id="map">
+        <div class="section-copy">
+          <p class="eyebrow">Experience Map</p>
+          <h2>음악이 만들어지고 전달되는 경로를 따라 움직인다.</h2>
+        </div>
+        <div class="map-board">
+          <button class="map-pin is-active" style="--x: 16%; --y: 32%" data-map="listen">
+            <span>01</span>
+          </button>
+          <button class="map-pin" style="--x: 44%; --y: 58%" data-map="align">
+            <span>02</span>
+          </button>
+          <button class="map-pin" style="--x: 73%; --y: 28%" data-map="launch">
+            <span>03</span>
+          </button>
+          <div class="map-route" aria-hidden="true"></div>
+          <article id="map-detail" class="map-detail">
+            <span>01 / Listening Room</span>
+            <h3>좋은 곡을 고르는 것에서 멈추지 않는다.</h3>
+            <p>
+              곡의 첫인상, 보컬 캐릭터, 레퍼런스, 청자 반응 포인트를 분해해
+              다음 의사결정으로 연결합니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tracks section" id="tracks">
+        <div class="section-copy">
+          <p class="eyebrow">Track Deck</p>
+          <h2>각 트랙은 하나의 제안서처럼 읽힌다.</h2>
+        </div>
+        <div class="deck" aria-label="트랙 전략 카드">
+          <button class="track-card is-selected" data-track="0">
+            <span>Track 01</span>
+            <strong>Artist Fit</strong>
+            <small>voice, image, fan expectation</small>
+          </button>
+          <button class="track-card" data-track="1">
+            <span>Track 02</span>
+            <strong>Demo Direction</strong>
+            <small>hook, topline, arrangement memo</small>
+          </button>
+          <button class="track-card" data-track="2">
+            <span>Track 03</span>
+            <strong>Release Story</strong>
+            <small>teaser, short-form, press angle</small>
+          </button>
+        </div>
+        <article id="track-panel" class="track-panel">
+          <p>Selected Track</p>
+          <h3>Artist Fit</h3>
+          <ul>
+            <li>아티스트의 현재 이미지와 곡의 정서를 맞춥니다.</li>
+            <li>팬이 기대하는 지점과 새롭게 확장할 지점을 나눕니다.</li>
+            <li>레퍼런스를 단순 복제가 아니라 의사결정 언어로 정리합니다.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="builder section" id="builder">
+        <div class="section-copy">
+          <p class="eyebrow">Build Your A&R</p>
+          <h2>오늘 필요한 A&R 조합을 직접 빌드한다.</h2>
+        </div>
+        <div class="builder-layout">
+          <div class="builder-controls" aria-label="A&R 역량 선택">
+            <label><input type="checkbox" value="taste" checked /> Taste Radar</label>
+            <label><input type="checkbox" value="production" checked /> Production Memo</label>
+            <label><input type="checkbox" value="market" /> Market Timing</label>
+            <label><input type="checkbox" value="people" /> People Coordination</label>
+            <label><input type="checkbox" value="campaign" checked /> Campaign Story</label>
+          </div>
+          <div class="build-output">
+            <span>Current Build</span>
+            <h3 id="build-title">Taste-led Production Campaigner</h3>
+            <p id="build-text">
+              곡의 매력을 빠르게 포착하고, 제작 메모와 캠페인 스토리로 팀이
+              움직일 수 있는 언어를 만듭니다.
+            </p>
+            <div class="build-bars">
+              <i style="--w: 88%"></i>
+              <i style="--w: 72%"></i>
+              <i style="--w: 81%"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cases section" id="cases">
+        <div class="section-copy">
+          <p class="eyebrow">Case Files</p>
+          <h2>업무는 파일처럼 정리되고, 캠페인은 장면처럼 기억된다.</h2>
+        </div>
+        <div class="case-grid">
+          <article>
+            <span>Case A</span>
+            <h3>New Artist Intake</h3>
+            <p>신인 후보의 음색, 이미지, 성장 가능성을 한 페이지 리포트로 압축.</p>
+          </article>
+          <article>
+            <span>Case B</span>
+            <h3>Demo Listening Note</h3>
+            <p>후렴, 구성, 보컬 톤, 편곡 방향을 제작진이 바로 읽는 메모로 정리.</p>
+          </article>
+          <article>
+            <span>Case C</span>
+            <h3>Release Angle</h3>
+            <p>곡의 매력을 숏폼, 비주얼, 인터뷰 키워드로 확장하는 캠페인 언어 설계.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="story section" id="story">
+        <div class="story-rail" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow">Scroll Story</p>
+          <h2>듣고, 고르고, 설득하고, 완성한다.</h2>
+          <p>
+            YOOYOUNG의 A&R은 감각만으로 끝나지 않는다. 음악을 좋아하는 마음을
+            팀이 실행할 수 있는 문장과 순서로 바꾸는 일에 강하다.
+          </p>
+        </div>
+      </section>
+
+      <section class="credit section" id="credit">
+        <p class="eyebrow">End Credit</p>
+        <h2>Ready for the next release.</h2>
+        <p>
+          A&R / Music Production 포지션에서 곡과 사람, 캠페인을 잇는 실무형
+          플레이어로 합류하겠습니다.
+        </p>
+        <a class="button primary" href="#cover">Replay Campaign</a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
