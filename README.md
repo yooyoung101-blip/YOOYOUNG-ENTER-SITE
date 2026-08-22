@@ -39,4 +39,4 @@ The site uses only static HTML, CSS, JavaScript, and local assets.
 - `index.html`: site content and section structure
 - `styles.css`: responsive campaign visual system
 - `script.js`: scanner, map, track deck, builder, and reveal interactions
-- `assets/campaign-key-visual.png`: generated campaign key visual
+- Cover image: external web photo used as a temporary campaign visual.
