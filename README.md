@@ -1,13 +1,13 @@
-# YOOYOUNG A&R Campaign Site
+# YOOYOUNG Ice Cream A&R Shop
 
-A static campaign-style personal promotion site for an A&R / Music Production application.
+A static pop-up-shop style promotion site for an A&R / Music Production application.
 
-This is intentionally not a traditional resume page. It is structured like a music release campaign or EPK, with section-specific interactions:
+This is intentionally not a traditional resume page. It is inspired by playful K-pop ice-cream promotion microsites, with section-specific interactions:
 
 - Cover / Campaign Key Visual
 - ID Scanner
-- Experience Map
-- Track Deck
+- Promotion Map
+- Flavor Menu
 - Build Your A&R
 - Case Files
 - Scroll Story
@@ -25,18 +25,19 @@ Then visit `http://localhost:8080`.
 
 ## GitHub Pages
 
-This repository is ready for GitHub Pages as a static site.
+This repository is configured for GitHub Pages as a static site.
 
-1. Open the repository settings on GitHub.
-2. Go to Pages.
-3. Set the source to the `main` branch and the root folder.
-4. Save.
+Public site:
+
+```text
+https://yooyoung101-blip.github.io/YOOYOUNG-ENTER-SITE/
+```
 
 The site uses only static HTML, CSS, JavaScript, and local assets.
 
 ## Files
 
 - `index.html`: site content and section structure
-- `styles.css`: responsive campaign visual system
+- `styles.css`: responsive ice-cream pop-up visual system
 - `script.js`: scanner, map, track deck, builder, and reveal interactions
-- Cover image: external web photo used as a temporary campaign visual.
+- Cover image: external Pinterest-hosted ice cream shop photo used as a temporary campaign visual.
