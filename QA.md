@@ -1,4 +1,4 @@
-# QA — v12
+# QA — SM International A&R Pop Lab
 
 ## Static validation
 - [x] Inline JavaScript parses with Node `--check`
@@ -27,6 +27,13 @@
 - [x] Self-introduction PDF returns 200 locally
 - [x] SOMI local case page returns 200 locally
 - [x] Browser console errors: 0 during checked flows
+- [x] SM-specific redesign loads as `YOOYOUNG — International A&R Pop Lab`
+- [x] Desktop HOME shows `POP LAB KIT.`
+- [x] Desktop horizontal overflow: 0 at 1440px after SM redesign
+- [x] Mobile horizontal overflow: 0 at 375px, 390px, and 430px after SM redesign
+- [x] INDEX opens and shows PROFILE / WORKS / PROCESS / DOCS / CONTACT
+- [x] SOMI project card updates project stage and links to `projects/somi/index.html`
+- [x] Resume document sheet opens from `#docs` and links to `assets/docs/resume.pdf`
 
 ## Browser behaviors to verify after real deployment
 - [ ] HOME loading animation completes on GitHub Pages
