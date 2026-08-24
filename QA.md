@@ -31,6 +31,6 @@
 
 ## Deployment
 
-- [ ] Latest commit pushed to main
-- [ ] GitHub Pages build completed
-- [ ] Public URL returns the new YOOYOUNG cover
+- [x] Latest commit pushed to main
+- [x] GitHub Pages build completed
+- [x] Public URL returns the new YOOYOUNG cover
