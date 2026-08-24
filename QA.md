@@ -25,6 +25,7 @@
 - [x] A&R mode toggles and balance control update the output
 - [x] Case-file drawer opens with the correct content
 - [x] Scroll story advances through Demo to Release
+- [x] No face-like artwork, warped circles, or biomorphic graphics remain
 - [x] Resume opens in the in-site PDF viewer
 - [x] Mobile email remains on one line
 - [x] Browser console warnings and errors: 0

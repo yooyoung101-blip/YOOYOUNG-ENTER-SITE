@@ -7,7 +7,7 @@ The site presents actual experience across songwriting, vocal direction, artist 
 ## Direction
 
 - Large editorial typography with an asymmetric fashion-art layout
-- Biomorphic CSS objects that react, scan, assemble, and mutate
+- Music-signal consoles, analysis bars, modular capability boards, and release logs
 - High-contrast acid, pink, red, ice, black, and paper color system
 - No photography, stock imagery, or AI-generated imagery
 - Content focused only on YOOYOUNG's work and evidence
