@@ -84,13 +84,10 @@ body:before{content:"";position:fixed;inset:0;z-index:9997;pointer-events:none;o
 }
 @media(pointer:coarse){.cursor{display:none}.hint{display:none}.home-note{opacity:.78}.media-card:hover:before{transform:scale(1.04);filter:saturate(.76) contrast(1.08)}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.orbit svg{animation:none!important}}
-
-.soundcloud-cta{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:10px 14px;border:1px solid rgba(255,255,255,.28);font:8px var(--mono);letter-spacing:.12em;text-transform:uppercase;transition:background .25s,color .25s,border-color .25s}.soundcloud-cta:hover{background:#fff;color:#050505;border-color:#fff}.track .listen-dot{width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.35;margin-left:auto}.track.active .listen-dot{opacity:1;box-shadow:0 0 0 4px rgba(255,255,255,.08)}@media(max-width:700px){.soundcloud-cta{font-size:7px;margin-top:12px}}
 </style>
 <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
-<!-- YOOYOUNG ENTER SITE / BUILD V11 / self-contained SOMI case + SoundCloud integration -->
 <div class="copy-toast">EMAIL COPIED</div>
 <div class="loader"><div class="loader-inner"><div class="loader-word"><span>YOOYOUNG</span><span class="loader-count">000</span></div><div class="loader-line"><i></i></div></div></div>
 <div class="cursor"><span class="mark">✦</span><span class="label"></span></div>
@@ -136,11 +133,11 @@ body:before{content:"";position:fixed;inset:0;z-index:9997;pointer-events:none;o
 </div></div><div class="project-preview"></div></section>
 
 <section class="view" id="music" data-index="02.2 / MUSIC"><div class="pad"><div class="music-grid"><div class="visualizer"><canvas id="wave"></canvas><div class="now">PORTFOLIO PLAYER / SELECT A TRACK</div><button class="play" data-cursor="PLAY">PLAY / PAUSE</button></div><div><div class="eyebrow">02.2 / MUSIC</div><h1 class="display" style="font-size:clamp(68px,9vw,148px)">PRESS<br>PLAY.</h1><div class="track-list">
-<button class="track active" data-track="DISCORD"><span>01</span><b>DISCORD</b><small>TOPLINE 50 · GUIDE VOCAL 50</small><i class="listen-dot"></i></button>
-<button class="track" data-track="BRIGHTER"><span>02</span><b>BRIGHTER</b><small>LYRICS 50 · TOPLINE 30 · GUIDE 100</small><i class="listen-dot"></i></button>
-<button class="track" data-track="BLOW YOUR MIND"><span>03</span><b>BLOW YOUR MIND</b><small>115 BPM · A MINOR · DANCE POP</small><i class="listen-dot"></i></button>
-<button class="track" data-track="RELEASE PROJECT"><span>04</span><b>RELEASE PROJECT</b><small>TOPLINE · VOCAL REC · TUNE · MIX</small><i class="listen-dot"></i></button>
-</div><p class="music-note">PUBLIC DEMOS · 7 TRACKS / PRIVATE PITCHING DEMOS AVAILABLE</p><a class="soundcloud-cta" href="https://on.soundcloud.com/IU6XkAvDYi52wc92Py" target="_blank" rel="noopener" data-cursor="LISTEN">OPEN SOUNDCLOUD ↗</a></div></div></div></section>
+<button class="track active" data-track="DISCORD"><span>01</span><b>DISCORD</b><small>TOPLINE 50 · GUIDE VOCAL 50</small></button>
+<button class="track" data-track="BRIGHTER"><span>02</span><b>BRIGHTER</b><small>LYRICS 50 · TOPLINE 30 · GUIDE 100</small></button>
+<button class="track" data-track="BLOW YOUR MIND"><span>03</span><b>BLOW YOUR MIND</b><small>115 BPM · A MINOR · DANCE POP</small></button>
+<button class="track" data-track="RELEASE PROJECT"><span>04</span><b>RELEASE PROJECT</b><small>TOPLINE · VOCAL REC · TUNE · MIX</small></button>
+</div><p class="music-note">※ 음원 파일은 최종 공개 범위에 맞춰 연결 예정. 현재는 역할·크레딧 중심 포트폴리오.</p></div></div></div></section>
 
 <section class="view" id="docs" data-index="03 / DOCUMENTS"><div class="pad"><div class="eyebrow">03 / DOCUMENTS</div><h1 class="display">THE<br>FILES.</h1><div class="docs"><button class="doc" data-doc="resume" data-cursor="OPEN"><small>APPLICATION / GENERAL</small><b>RESUME</b><span class="doc-actions"><span>OPEN PREVIEW ↗</span><a href="assets/docs/resume.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation()">PDF ↗</a></span></button><button class="doc" data-doc="story" data-cursor="OPEN"><small>PROFILE / GENERAL</small><b>SELF<br>INTRO</b><span class="doc-actions"><span>OPEN PREVIEW ↗</span><a href="assets/docs/self-introduction.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation()">PDF ↗</a></span></button></div></div></section>
 
@@ -169,7 +166,7 @@ const follow=$('.follow');$$('.time-row').forEach(r=>{r.addEventListener('mousee
 /* works preview + detail drawer */
 const projectData={
  release:{kicker:'SELECTED WORK / 001',title:'RELEASE PROJECT',lead:'공동 작업곡이 발매곡으로 채택된 뒤 수정·재녹음, 보컬·믹스 보완과 일정·버전 조율에 참여한 제작 프로젝트.',link:null,facts:[['ROLE','Topline · Vocal Recording · Tune · Mix'],['PROCESS','Selection · Revision · Re-recording · Version Control'],['STATUS','Release process / production coordination']]},
- somi:{kicker:'SELECTED WORK / 002',title:'SOMI — VISUAL',lead:'아티스트 분석을 바탕으로 앨범 음악 방향, 트랙 역할, 비주얼 콘셉트와 프로모션 흐름을 하나의 웹 기획안으로 구현.',link:'projects/somi/index.html',facts:[['TYPE','Album Planning / Promotion'],['FORMAT','Interactive Web Proposal'],['FOCUS','Artist Analysis · Track Brief · Visual · Promotion']]},
+ somi:{kicker:'SELECTED WORK / 002',title:'SOMI — VISUAL',lead:'아티스트 분석을 바탕으로 앨범 음악 방향, 트랙 역할, 비주얼 콘셉트와 프로모션 흐름을 하나의 웹 기획안으로 구현.',link:'https://yooyoung101-blip.github.io/jeon-somi-visual-album-proposal/',facts:[['TYPE','Album Planning / Promotion'],['FORMAT','Interactive Web Proposal'],['FOCUS','Artist Analysis · Track Brief · Visual · Promotion']]},
  discord:{kicker:'SELECTED WORK / 003',title:'DISCORD',lead:'팀 송캠프에서 완성한 데모. 미니멀 808 힙합과 하우스 브레이크를 기반으로 탑라인과 가이드 보컬에 참여.',link:null,facts:[['ROLE','Topline 50% · Guide Vocal 50%'],['KEY / BPM','F minor · 131 BPM'],['FORMAT','Song Camp / Team Project']]},
  brighter:{kicker:'SELECTED WORK / 004',title:'BRIGHTER',lead:'혼성 보컬을 전제로 한 미드템포 프로젝트. 가사와 탑라인, 전체 가이드 보컬을 담당.',link:null,facts:[['ROLE','Lyrics 50% · Topline 30% · Guide Vocal 100%'],['KEY / BPM','D minor · 85 BPM'],['FORMAT','Song Camp / Team Project']]}
 };

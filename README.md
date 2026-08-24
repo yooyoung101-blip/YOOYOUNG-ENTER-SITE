@@ -1,43 +1,43 @@
-# YOOYOUNG Ice Cream A&R Shop
+# YOOYOUNG ENTER SITE — v12
 
-A static pop-up-shop style promotion site for an A&R / Music Production application.
+Deployment-ready candidate for a company-neutral entertainment portfolio.
 
-This is intentionally not a traditional resume page. It is inspired by playful K-pop ice-cream promotion microsites, with section-specific interactions:
+## Included
+- Full-screen HOME / INDEX navigation
+- PROFILE / EXPERIENCE / WORKS / MUSIC / DOCUMENTS / CONTACT chapters
+- One-typeface YOOYOUNG wordmark and oversized orbit typography
+- Desktop cursor states, hover previews and project drawer
+- Mobile swipe chapter navigation and coarse-pointer fallbacks
+- Hash deep-links (`#profile`, `#works`, `#music`, ...)
+- Resume and self-introduction PDF + HTML fallback
+- Local SOMI Visual Album Proposal at `projects/somi/index.html`
+- SoundCloud collection link + local audio drop-in folder
+- GitHub Pages root structure (`.nojekyll`, `404.html`, manifest, favicon)
+- `noindex` by default for recruiter-link privacy
 
-- Cover / Campaign Key Visual
-- ID Scanner
-- Promotion Map
-- Flavor Menu
-- Build Your A&R
-- Case Files
-- Scroll Story
-- End Credit
+## QA completed in v12
+- Inline JavaScript syntax check: PASS
+- Internal file references: PASS
+- Menu `data-go` targets: PASS
+- Required deployment files: PASS
+- PDF/document paths: PASS
 
-## Run Locally
+See `QA.md` for the exact checks.
 
-Open `index.html` directly in a browser, or use any simple static server.
+## Preview on Mac
+Double-click `START_PREVIEW.command`, or run:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then visit `http://localhost:8080`.
+Then open `http://localhost:8080` in Safari/Chrome. Do not judge interactions from the iPhone Files HTML preview; it does not behave like a normal deployed browser page.
 
-## GitHub Pages
+## Before final public release
+1. Replace the temporary local reference photography in `assets/images/` with your final approved image set.
+2. Drop approved audio files into `assets/audio/` and connect them only when public sharing is permitted.
+3. Confirm which contact/social links should be public.
+4. If you want search-engine indexing, remove `noindex,nofollow` and update `robots.txt`.
 
-This repository is configured for GitHub Pages as a static site.
-
-Public site:
-
-```text
-https://yooyoung101-blip.github.io/YOOYOUNG-ENTER-SITE/
-```
-
-The site uses only static HTML, CSS, JavaScript, and local assets.
-
-## Files
-
-- `index.html`: site content and section structure
-- `styles.css`: responsive ice-cream pop-up visual system
-- `script.js`: scanner, map, track deck, builder, and reveal interactions
-- Cover image: external Pinterest-hosted ice cream shop photo used as a temporary campaign visual.
+## Deploy
+See `DEPLOY.md` for the exact `YOOYOUNG-ENTER-SITE` GitHub Pages steps.
