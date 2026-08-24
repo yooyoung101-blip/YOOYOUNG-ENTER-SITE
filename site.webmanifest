@@ -1,9 +1,9 @@
 {
-  "name":"YOOYOUNG Creative Portfolio",
+  "name":"YOOYOUNG International A&R",
   "short_name":"YOOYOUNG",
   "start_url":"./",
   "display":"standalone",
-  "background_color":"#080808",
-  "theme_color":"#080808",
+  "background_color":"#f6f6f1",
+  "theme_color":"#d9ff19",
   "icons":[{"src":"favicon.svg","sizes":"any","type":"image/svg+xml"}]
 }

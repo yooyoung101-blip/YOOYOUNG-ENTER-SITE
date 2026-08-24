@@ -1,34 +1,36 @@
-# QA — SM International A&R Campaign Kit
+# QA - YOOYOUNG International A&R
 
 ## Static validation
-- [x] Inline JavaScript parses with Node
-- [x] No `<img>` tags in `index.html`
-- [x] No `assets/images` references in `index.html`
+
+- [x] Inline JavaScript parses successfully
+- [x] No image elements or image-asset references in the main site
+- [x] All 21 internal hash links resolve to existing sections
 - [x] Resume PDF exists
 - [x] Self-introduction PDF exists
-- [x] SOMI local case page exists
-- [x] `.nojekyll` exists
-- [x] `404.html` exists
-- [x] Manifest and favicon exist
+- [x] SOMI case page exists
+- [x] Git diff whitespace validation passes
+- [x] GitHub Pages support files exist
 
-## Local preview
-- [x] Local preview server served `index.html`
-- [x] Codex browser panel requested the updated preview URL
+## Browser validation
 
-## Browser QA to verify visually
-- [ ] Desktop load shows `A&R CAMPAIGN KIT`
-- [ ] Desktop horizontal overflow: 0
-- [ ] Mobile horizontal overflow: 0 at 375px
-- [ ] Mobile navigation opens and exposes ID / Core / Works / Release / Files
-- [ ] Track deck buttons update the selected proof console
-- [ ] Contact copy button shows confirmation
+- [x] Desktop viewport tested at 1280 x 720
+- [x] Mobile viewport tested visually at 390 x 844
+- [x] Responsive boundaries tested at 375 x 812 and 430 x 932
+- [x] Horizontal overflow is 0 at all tested sizes
+- [x] Full-screen index opens and all eight chapters are accessible
+- [x] Applicant scanner reaches 100%
+- [x] Experience timeline scrolls horizontally
+- [x] Track selection updates title, role, status, and metadata
+- [x] Track waveform motion can pause and resume
+- [x] A&R mode toggles and balance control update the output
+- [x] Case-file drawer opens with the correct content
+- [x] Scroll story advances through Demo to Release
+- [x] Resume opens in the in-site PDF viewer
+- [x] Mobile email remains on one line
+- [x] Browser console warnings and errors: 0
 
-## Browser behaviors to verify after real deployment
-- [ ] GitHub Pages cache serves the latest commit
-- [ ] PDF links open from the deployed URL
-- [ ] SoundCloud link opens correctly
+## Deployment
 
-## Final-content dependencies
-These can be adjusted later without changing the design system:
-- Individual public audio previews
-- Final public contact/social links
+- [ ] Latest commit pushed to main
+- [ ] GitHub Pages build completed
+- [ ] Public URL returns the new YOOYOUNG cover

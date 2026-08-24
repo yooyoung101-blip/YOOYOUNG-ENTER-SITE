@@ -1,51 +1,54 @@
-# YOOYOUNG ENTER SITE — SM International A&R Campaign Kit
+# YOOYOUNG - International A&R
 
-Deployment-ready SM International A&R campaign portfolio.
+An image-free interactive application site for YOOYOUNG's SM International A&R portfolio.
 
-The design direction is an image-free campaign kit: polished, strange, playful,
-and interactive, but built around YOOYOUNG's actual production ability rather
-than portrait or mood photography.
-The core message is:
+The site presents actual experience across songwriting, vocal direction, artist training, visual content, global collaboration, project control, and release rights as a promotional campaign rather than a conventional web resume.
 
-```text
-YOOYOUNG
-MUSIC · ARTIST INSIGHT · VISUAL · PRODUCTION
-```
+## Direction
 
-## Included
-- HOME / ID SCANNER / CORE / TRACK DECK / RELEASE MAP / CASE FILES / DOC PACK / CONTACT chapters
-- Image-free graphic system using typography, grids, cards, meters, scanner motion, and document objects
-- Interactive track deck with project detail console
-- Responsive navigation and mobile layout
-- Hash deep-links (`#profile`, `#core`, `#works`, `#release`, `#files`, ...)
-- Resume and self-introduction PDF + HTML fallback
-- Local SOMI Visual Album Proposal at `projects/somi/index.html`
-- SoundCloud collection link + local audio drop-in folder
-- GitHub Pages root structure (`.nojekyll`, `404.html`, manifest, favicon)
-- `noindex` by default for recruiter-link privacy
+- Large editorial typography with an asymmetric fashion-art layout
+- Biomorphic CSS objects that react, scan, assemble, and mutate
+- High-contrast acid, pink, red, ice, black, and paper color system
+- No photography, stock imagery, or AI-generated imagery
+- Content focused only on YOOYOUNG's work and evidence
 
-## QA completed
-- Inline JavaScript syntax check: PASS
-- Internal file references: PASS
-- Menu `data-go` targets: PASS
-- Required deployment files: PASS
-- PDF/document paths: PASS
+## Chapters
 
-See `QA.md` for the exact checks.
+- Cover
+- ID Scanner
+- Experience Map
+- Track Deck
+- Build Your A&R
+- Case Files
+- Scroll Story
+- End Credit
 
-## Preview on Mac
-Double-click `START_PREVIEW.command`, or run:
+## Interactions
 
-```bash
-python3 -m http.server 8080
-```
+- Full-screen responsive index
+- Pointer-reactive cover object and circular type
+- Animated applicant scan
+- Horizontal experience timeline
+- Selectable music project console and canvas waveform
+- Capability toggles and artist-fit balance control
+- Case-file detail drawer
+- Sticky Demo-to-Release scroll sequence
+- In-site resume and self-introduction PDF viewer
+- Email copy feedback
 
-Then open `http://localhost:8080` in Safari/Chrome. Do not judge interactions from the iPhone Files HTML preview; it does not behave like a normal deployed browser page.
+## Project structure
 
-## Before final public release
-1. Drop approved audio files into `assets/audio/` and connect them only when public sharing is permitted.
-2. Confirm which contact/social links should be public.
-3. If you want search-engine indexing, remove `noindex,nofollow` and update `robots.txt`.
+- index.html: self-contained production site
+- assets/docs/: resume and self-introduction HTML/PDF files
+- projects/somi/: existing SOMI interactive album proposal
+- 404.html, .nojekyll, site.webmanifest: GitHub Pages support
 
-## Deploy
-See `DEPLOY.md` for the exact `YOOYOUNG-ENTER-SITE` GitHub Pages steps.
+## Local preview
+
+Run \`python3 -m http.server 8080\` from the repository root and open \`http://localhost:8080/\`.
+
+## Privacy
+
+The site uses \`noindex,nofollow\` by default so it can be shared directly with recruiters without search indexing.
+
+See \`QA.md\` for current validation results and \`SOURCES.md\` for design-reference notes.
